@@ -7,7 +7,7 @@ Project ini berjalan di GitHub Pages dan bersifat frontend-only (tanpa backend).
 ---
 
 ## 🌐 Demo
-https://username.github.io/kentang-os/
+https://wiraradikahamizan-pixel.github.io/Kentang-OS/
 
 ---
 
