@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Peringatan Sistem</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="warning">
+
+<div class="box">
+
+  <h1>⚠️ PERINGATAN SISTEM</h1>
+
+  <p>
+    Kamu baru saja mengakses halaman eksternal dari Kentang OS.
+  </p>
+
+  <p>
+    Sistem tidak bertanggung jawab atas apa yang terjadi setelah ini.
+  </p>
+
+  <p><b>Lanjutkan dengan risiko sendiri.</b></p>
+
+  <h2 id="timer">3</h2>
+
+  <button id="btn" onclick="go()">👉 Lanjutkan</button>
+  <button onclick="back()">⬅ Kembali</button>
+
+</div>
+
+<script>
+let t = 3;
+const timer = document.getElementById("timer");
+const btn = document.getElementById("btn");
+
+btn.style.display = "none";
+
+const interval = setInterval(() => {
+  t--;
+  timer.innerText = t;
+
+  if (t <= 0) {
+    clearInterval(interval);
+    timer.innerText = "SIAP";
+    btn.style.display = "inline-block";
+  }
+}, 1000);
+
+function go(){
+  window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+}
+
+function back(){
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
