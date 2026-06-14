@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Kentang OS v6</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login" class="center">
+  <h1>🥔 Kentang OS v6</h1>
+  <input id="user" placeholder="username">
+  <button onclick="login()">Masuk</button>
+</div>
+
+<div id="app" class="hidden">
+
+<header>
+  <h1>Dashboard Kentang OS</h1>
+  <button onclick="logout()">Logout</button>
+</header>
+
+<div class="grid">
+
+  <div class="card">
+    <h2>💸 Donasi</h2>
+    <input id="money" type="number" placeholder="Rp">
+    <button onclick="donate()">Kirim</button>
+    <p id="ai"></p>
+  </div>
+
+  <div class="card">
+    <h2>💬 Feed</h2>
+    <input id="post" placeholder="Tulis status">
+    <button onclick="postMsg()">Post</button>
+    <div id="feed"></div>
+  </div>
+
+  <div class="card">
+    <h2>📊 Stats</h2>
+    <p id="stats"></p>
+  </div>
+
+  <div class="card">
+    <h2>🏆 Achievement</h2>
+    <p id="ach"></p>
+  </div>
+
+</div>
+
+<div class="qr">
+  <h2>📦 QR Warning</h2>
+  <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=YOUR_LINK/warning.html">
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
